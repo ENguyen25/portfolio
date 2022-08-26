@@ -27,31 +27,38 @@ const Skills = () => {
       <Container>
         <Title title="Skills" />
         <Fade bottom duration={1000} delay={800} distance="30px">
-          <Tabs className="tabs-wrapper" defaultActiveKey={'technical-skills'} fill>
+          <Tabs className="tabs-wrapper" defaultActiveKey="technical-skills" fill>
             <Tab className="skills-wrapper" eventKey="technical-skills" title="Technical Skills">
               <Row>
                 <Col>
                   <div className="skills-label">JavaScript</div>
-                  <ProgressBar now={100}></ProgressBar>
-                  <div className="skills-label">JavaScript</div>
-                  <ProgressBar now={80}></ProgressBar>
-                  <div className="skills-label">JavaScript</div>
-                  <ProgressBar now={60}></ProgressBar>
+                  <ProgressBar now={90} />
+                  <div className="skills-label">CSS</div>
+                  <ProgressBar now={100} />
+                  <div className="skills-label">HTML</div>
+                  <ProgressBar now={100} />
                 </Col>
-                <Col></Col>
+                <Col>
+                  <div className="skills-label">GraphQL</div>
+                  <ProgressBar now={80} />
+                  <div className="skills-label">PostgresQL</div>
+                  <ProgressBar now={80} />
+                  <div className="skills-label">TypeScript</div>
+                  <ProgressBar now={50} />
+                </Col>
               </Row>
             </Tab>
             <Tab className="skills-wrapper" eventKey="soft-skills" title="Soft Skills">
               <Row>
                 <Col>
                   <div className="skills-label">JavaScript</div>
-                  <ProgressBar now={100}></ProgressBar>
+                  <ProgressBar now={100} />
                   <div className="skills-label">JavaScript</div>
-                  <ProgressBar now={80}></ProgressBar>
+                  <ProgressBar now={80} />
                   <div className="skills-label">JavaScript</div>
-                  <ProgressBar now={60}></ProgressBar>
+                  <ProgressBar now={60} />
                 </Col>
-                <Col></Col>
+                <Col />
               </Row>
             </Tab>
           </Tabs>
