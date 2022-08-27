@@ -90,3 +90,31 @@
   }
 }
 
+.navbar {
+  background-color: rgba(234, 236, 239, 0.8);
+  padding-left: 0rem;
+  
+  .nav-link {
+    font-size: 1.6rem;
+  }
+}
+
+.navbar-expand {
+
+  .navbar-nav {
+
+    .nav-link {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}
+
+.navbar-light {
+
+  .navbar-brand {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-right: 3rem;
+  }
+}

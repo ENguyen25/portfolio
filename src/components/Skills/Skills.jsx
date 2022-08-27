@@ -7,20 +7,6 @@ import PortfolioContext from '../../context/context';
 
 const Skills = () => {
   const { skills } = useContext(PortfolioContext);
-  const { skill1 } = skills;
-
-  const [isDesktop, setIsDesktop] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    if (window.innerWidth > 769) {
-      setIsDesktop(true);
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-      setIsDesktop(false);
-    }
-  }, []);
 
   return (
     <section id="skills">
@@ -32,18 +18,18 @@ const Skills = () => {
               <Row>
                 <Col>
                   <div className="skills-label">JavaScript</div>
-                  <ProgressBar now={90} />
-                  <div className="skills-label">CSS</div>
                   <ProgressBar now={100} />
-                  <div className="skills-label">HTML</div>
+                  <div className="skills-label">React</div>
+                  <ProgressBar now={90} />
+                  <div className="skills-label">HTML/CSS</div>
                   <ProgressBar now={100} />
                 </Col>
                 <Col>
                   <div className="skills-label">GraphQL</div>
                   <ProgressBar now={80} />
-                  <div className="skills-label">PostgresQL</div>
-                  <ProgressBar now={80} />
                   <div className="skills-label">TypeScript</div>
+                  <ProgressBar now={80} />
+                  <div className="skills-label">Python</div>
                   <ProgressBar now={50} />
                 </Col>
               </Row>
@@ -51,14 +37,21 @@ const Skills = () => {
             <Tab className="skills-wrapper" eventKey="soft-skills" title="Soft Skills">
               <Row>
                 <Col>
-                  <div className="skills-label">JavaScript</div>
+                  <div className="skills-label">Leadership</div>
                   <ProgressBar now={100} />
-                  <div className="skills-label">JavaScript</div>
-                  <ProgressBar now={80} />
-                  <div className="skills-label">JavaScript</div>
-                  <ProgressBar now={60} />
+                  <div className="skills-label">Collaboration</div>
+                  <ProgressBar now={100} />
+                  <div className="skills-label">Emotional Intelligence</div>
+                  <ProgressBar now={100} />
                 </Col>
-                <Col />
+                <Col>
+                  <div className="skills-label">Problem-Solving / Critical Thinking</div>
+                  <ProgressBar now={100} />
+                  <div className="skills-label">Time Management</div>
+                  <ProgressBar now={100} />
+                  <div className="skills-label">Adaptability</div>
+                  <ProgressBar now={100} />
+                </Col>
               </Row>
             </Tab>
           </Tabs>

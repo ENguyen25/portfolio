@@ -7,6 +7,10 @@ export const headData = {
   description: 'Welcome to my website', // e.g: Welcome to my website
 };
 
+export const navBarData = {
+  link1: '',
+}
+
 // HERO DATA
 export const heroData = {
   title: 'Hi, my name is',
@@ -17,7 +21,7 @@ export const heroData = {
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.jpg',
+  img: 'Headshot.jpg',
   paragraphOne: 'I am a software developer passionate about using technology to solve social problems. Issues I care about include mental health advocacy, accessible healthcare, environmental sustainability, education, and DEI (Diversity, Inclusion & Equity).',
   paragraphTwo: 'In my free time, I enjoy reading fiction and self-help books. Nonfiction topics I enjoy reading about include history, culture, society, politics, economics, technology, and psychology. I also enjoy writing, crafting, and working out.',
   paragraphThree: "I'm always open to connecting on future projects.",
@@ -28,7 +32,7 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'CV_Hero.jpg',
     title: 'Camino Verde Trees Directory',
     info: 'A directory of Amazonian plant species with data from Airtable. Users can filter through the results with a search prompt and category tags.',
     info2: 'Technologies used: React.js, Node.js, CSS.',
