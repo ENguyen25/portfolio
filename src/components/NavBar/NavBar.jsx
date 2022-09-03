@@ -27,7 +27,7 @@ const Navigation = () => {
                 Skills
               </Link>
             </Nav.Link>
-            <Nav.Link href="#link">Resume</Nav.Link>
+            <Nav.Link href="https://docs.google.com/document/d/1cHRLwCGccZ3KD2xfvLOkqtrKpqVCtmZaOjzaJiQCXgw/edit?usp=sharing">Resume</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
