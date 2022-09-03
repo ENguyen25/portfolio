@@ -57,6 +57,33 @@ export const projectsData = [
     url: 'https://glacial-plains-58535.herokuapp.com/',
     repo: 'https://github.com/ENguyen25/know-more-tiers', // if no repo, the button will not show up
   },
+  {
+    id: nanoid(),
+    img: 'woc.jpg',
+    title: 'Women on Change',
+    info: 'An organizational website for Women on Change, a nonprofit that seeks to empower women and minorities to become entrepreneurs that server their communities.',
+    info2: 'Technologies used: WordPress, Oxygen Builder',
+    url: 'https://womenonchange.org',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'episofd.jpg',
+    title: 'Episo Foundation',
+    info: 'This website was the result of collaborating with other developers in an event hosted by 48in48, a charity organization that connects nonprofit organizations with volunteer web developers. We created a WordPress website for Episo Foundation, an organization that strives to help formerly incarcerated female minorities to succeed in life.',
+    info2: 'Technologies used: WordPress, BeaverBuilder',
+    url: '',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'wocotm.jpg',
+    title: 'Women of Color on the Move',
+    info: 'This website was developed using WordPress for Women of Color on the Move, a nonprofit organization that provides programs for women of color to learn important life skills such as financial literacy, mental health assistance, and job readiness.',
+    info2: 'Technologies used: WordPress, Divi Themes',
+    url: 'https://womenofcoloronthemove.org',
+    repo: '', // if no repo, the button will not show up
+  },
 ];
 
 // SKILLS DATA

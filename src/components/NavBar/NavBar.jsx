@@ -9,7 +9,7 @@ const Navigation = () => {
   return (
     <Navbar sticky="top">
       <Container>
-        <Navbar.Brand className='text-color-main' href="#home">E | N</Navbar.Brand>
+        <Navbar.Brand className='text-color-main' href="/">E | N</Navbar.Brand>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link>

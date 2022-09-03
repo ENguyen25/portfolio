@@ -9,7 +9,15 @@ import Footer from './Footer/Footer';
 
 import { PortfolioProvider } from '../context/context';
 
-import { navBarData, heroData, aboutData, projectsData, skillsData, contactData, footerData } from '../mock/data';
+import {
+  navBarData,
+  heroData,
+  aboutData,
+  projectsData,
+  skillsData,
+  contactData,
+  footerData,
+} from '../mock/data';
 
 function App() {
   const [navBar, setNavBar] = useState({});
@@ -24,22 +32,22 @@ function App() {
     setNavBar({ ...navBarData });
     setHero({ ...heroData });
     setAbout({ ...aboutData });
-    setProjects([...projectsData]);
-    setSkills({...skillsData});
+    setProjects([...projectsData.slice(0, 3)]);
+    setSkills({ ...skillsData });
     setContact({ ...contactData });
     setFooter({ ...footerData });
   }, []);
 
   return (
-    <PortfolioProvider value={{ navBar, hero, about, projects, skills, contact, footer }}>
-      <NavBar />
-      <Hero />
-      <About />
-      <Projects />
-      <Skills />
-      <Contact />
-      <Footer />
-    </PortfolioProvider>
+      <PortfolioProvider value={{ navBar, hero, about, projects, skills, contact, footer }}>
+        <NavBar />
+        <Hero />
+        <About />
+        <Projects />
+        <Skills />
+        <Contact />
+        <Footer />
+      </PortfolioProvider>
   );
 }
 

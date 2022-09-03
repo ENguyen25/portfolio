@@ -6,11 +6,13 @@ import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
 
-const Projects = () => {
-  const { projects } = useContext(PortfolioContext);
+const Works = () => {
+  const { works } = useContext(PortfolioContext);
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+
+  const [projects, setProjects] = useState([]);
 
   useEffect(() => {
     if (window.innerWidth > 769) {
@@ -22,12 +24,44 @@ const Projects = () => {
     }
   }, []);
 
+  useEffect(() => {
+    setProjects(works)
+  }, [works])
+
   return (
     <section id="projects">
       <Container>
-        <div className="project-wrapper">
+        <div className="project-wrapper" style={{ paddingTop: '5rem' }}>
           <Title title="Projects" />
-          {projects.map((project) => {
+
+          <div className="buttons-wrapper">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-btn cta-btn--hero"
+              onClick={() => setProjects(works)}
+            >
+              All Projects
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-btn cta-btn--hero"
+              onClick={() => setProjects(works.slice(0, 3))}
+            >
+              React
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-btn cta-btn--hero"
+              onClick={() => setProjects(works.slice(3, 7))}
+            >
+              WordPress
+            </a>
+          </div>
+
+          {projects && projects.map((project) => {
             const { title, info, info2, url, repo, img, id } = project;
 
             return (
@@ -110,17 +144,10 @@ const Projects = () => {
               </Row>
             );
           })}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cta-btn cta-btn--hero cta-btn--project"
-          >
-            See More Projects
-          </a>
         </div>
       </Container>
     </section>
   );
 };
 
-export default Projects;
+export default Works;
