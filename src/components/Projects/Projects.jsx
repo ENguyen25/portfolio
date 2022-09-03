@@ -114,6 +114,7 @@ const Projects = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="cta-btn cta-btn--hero cta-btn--project"
+            href="/project"
           >
             See More Projects
           </a>
